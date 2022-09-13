@@ -18,9 +18,9 @@ steps:
     echo Unified Agent downloaded successfully
     java -jar wss-unified-agent.jar
   env:
-    WS_APIKEY: $(APIKEY)
-    WS_USERKEY: $(USERKEY)
-    WS_WSS_URL: $(WSS_URL)
-    WS_PRODUCTNAME: AZDO_$(System.TeamProject)
-    WS_PROJECTNAME: $(Build.Repository.Name)_$(Build.SourceBranchName)
+    WS_APIKEY: 250865dd939049cabc5c954806c92f5f03ba0bb0398b4739980edc84374af819
+    WS_USERKEY: 9ef0b421c9294e41a51c009a848d8e098f50019f8279474daea6e39b3ecb5064
+    WS_WSS_URL: https://saas.whitesourcesoftware.com/api/v1.3
+    WS_PRODUCTNAME: Demo Data - 1
+    WS_PROJECTNAME: Demo Product
   displayName: 'Mend Unified Agent Scan'
