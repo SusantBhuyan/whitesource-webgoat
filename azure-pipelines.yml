@@ -13,11 +13,11 @@ steps:
 - script: |
     curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
     echo Unified Agent downloaded successfully
-    java -jar wss-unified-agent.jar
+    java -jar wss-unified-agent-22.8.1.jar
   env:
     WS_APIKEY: 250865dd939049cabc5c954806c92f5f03ba0bb0398b4739980edc84374af819
-    WS_USERKEY: 9ef0b421c9294e41a51c009a848d8e098f50019f8279474daea6e39b3ecb5064
+    WS_USERKEY: 007a2f54c7e64786aee10a635bcca470972087c9a29a49259642018ec990b79a
     WS_WSS_URL: https://saas.whitesourcesoftware.com/api/v1.3
-    WS_PRODUCTNAME: Demo Data - 1
-    WS_PROJECTNAME: Demo Product
+    WS_PRODUCTNAME: Susant-W
+    WS_PROJECTNAME: Susant-wp1
   displayName: 'Mend Unified Agent Scan'
