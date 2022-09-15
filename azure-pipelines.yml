@@ -14,6 +14,11 @@ steps:
     curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
     echo Unified Agent downloaded successfully
     java -jar wss-unified-agent-22.8.1.jar
+- task: WhiteSource@21
+  
+  inputs:
+    cwd: '$(System.DefaultWorkingDirectory)'
+    projectName: 'Susant-wp1'
   env:
     WS_APIKEY: 250865dd939049cabc5c954806c92f5f03ba0bb0398b4739980edc84374af819
     WS_USERKEY: 007a2f54c7e64786aee10a635bcca470972087c9a29a49259642018ec990b79a
